@@ -16,4 +16,6 @@ class Triangle
     [a, b, c].each { |side| true_tri << false if side <= 0 }
     raise TriangleError if true_tri.include?(false)
   end
+
+  class TriangleError < StandardError
 end
